@@ -1,0 +1,21 @@
+// Name: Chelby Rhoades
+// TargetProfit.java which prompts for a target profit margin and cost
+// It then calculates and displays the recommended retail price
+
+import java.util.Scanner;
+
+public class TargetProfit{
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.print("What is the profit margin target? ");
+		double profitMargin = input.nextDouble();
+
+		System.out.print("What is the cost of the product? ");
+		double cost = input.nextDouble();
+
+		double price = cost + (cost * (profitMargin/100));
+		System.out.printf("The target price is $ %5.2f", price);
+		System.out.println();
+	}
+}
